@@ -1,24 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
-    <style>
-        input:focus{
-            background-color: blue;
-        }
-        :target{
-            border: 2px solid green;
-            background-color: yellow;
-        }
-    </style>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<meta charset="utf-8">
+<style>
+    table,td{
+        border:2px solid black;
+        border-collapse: collapse; }
+</style>
 </head>
 <body>
-    <div class="container-lg">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quisquam repellat magnam minus saepe culpa porro labore nisi? Incidunt quae beatae velit excepturi repellat adipisci, nam fugiat sequi tenetur magnam hic aut deleniti unde nihil sit perferendis quo est nulla, laboriosam illum odit molestiae quia sed? Earum consequuntur deserunt quos consectetur corporis dolorem nam, incidunt, aperiam voluptatem maxime suscipit veniam voluptas harum exercitationem, molestiae saepe sed reiciendis? Laudantium deleniti earum corrupti ipsum maiores perferendis asperiores sint consectetur eveniet, quibusdam quae veritatis eius atque dolorum eos cupiditate nam velit alias reiciendis obcaecati qui, dolores, nulla quia! Modi in quo aspernatur autem!
-    </div>
-</body>
-</html>
+<table>
+    <tr><td>First name: <input type="text" name="fname" value="--ชื่อจริง--"><br>
+            Last name: <input type="text" name="lname" value="--นามสกุล--"></td>   
+        <td>Male <input type="radio" name="gender" value="m"><br>
+            Female <input type="radio" name="gender" value="f"><br>
+            Other <input type="radio" name="gender" value="o"><br></td></tr>
+    <tr><td rowspan="2">Badminton: <input type="checkbox" name="hobby" value="1"><br>
+        Reading a book: <input type="checkbox" name="hobby" value="2"><br>
+        Fitness : <input type="checkbox" name="hobby" value="3"><br></td>
+          <td>
+                <select>
+                     <option>--ช่วงเวลา--</option>
+                     <option>00:00-11:59</option>
+                     <option>12:00-23:59</option>
+                </select>
+          </td>
+    </tr>
+    <tr><td>Hobby</td></tr>
+    <tr>
+          <td colspan="2" align="center">
+               <input type="submit" name="ok" value="กดปุ่ม">&nbsp;
+               <input type="reset" name="cancel" value="ยกเลิก">
+         </td>
+    </tr>
+</table></body></html>
